@@ -1,6 +1,8 @@
 # Using Alpine to keep the images smaller
 # Change to using the official NodeJS Alpine container
 FROM node:alpine
+LABEL org.opencontainers.image.source https://github.com/cirfis/docker-pinafore
+
 ARG PINAFORE_VER=v1.24.4
 
 WORKDIR /app
